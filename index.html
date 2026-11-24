@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шаехов Раис • Путь общественного деятеля</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes gearSpin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .gear {
+            animation: gearSpin 25s linear infinite;
+        }
+        .timeline-item:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white">
+    <header class="fixed top-0 w-full bg-black/80 backdrop-blur-md z-50 py-6">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <div>
+                <div class="text-4xl font-bold tracking-tighter">Шаехов Раис</div>
+                <div class="text-emerald-400 text-sm">СВ РТ • Нижнекамск</div>
+            </div>
+            <nav class="flex gap-10 text-sm uppercase tracking-[2px]">
+                <a href="#wheel" class="hover:text-emerald-400 transition">Колесо</a>
+                <a href="#achievements" class="hover:text-emerald-400 transition">Достижения</a>
+                <a href="#projects" class="hover:text-emerald-400 transition">Проекты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="min-h-screen flex items-center relative">
+        <div class="absolute inset-0 bg-[radial-gradient(at_center,#052e1600_30%,#052e1600)]"></div>
+        <div class="max-w-6xl mx-auto px-6 text-center pt-20">
+            <div class="inline-flex items-center gap-3 bg-emerald-900/70 px-6 py-2 rounded-3xl mb-8">
+                <div class="w-3 h-3 bg-emerald-400 rounded-full animate-ping"></div>
+                Нижнекамск, Татарстан
+            </div>
+            <h1 class="text-7xl font-bold tracking-tighter leading-none mb-6">Колесо<br>Шаехова</h1>
+            <p class="max-w-lg mx-auto text-2xl text-zinc-400">Общественный деятель. Исполнительный директор Союза велосипедистов РТ.</p>
+            <a href="#wheel" class="mt-12 inline-block px-10 py-4 border border-emerald-400 rounded-3xl hover:bg-emerald-400 hover:text-black transition">Начать</a>
+        </div>
+    </section>
+
+    <section id="wheel" class="py-32 bg-black relative">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="gear mx-auto w-80 h-80">
+                <svg width="320" height="320" viewBox="0 0 320 320">
+                    <circle cx="160" cy="160" r="130" fill="none" stroke="#10b981" stroke-width="18"/>
+                    <circle cx="160" cy="160" r="85" fill="none" stroke="#10b981" stroke-width="12"/>
+                    <circle cx="160" cy="160" r="28" fill="#10b981"/>
+                </svg>
+            </div>
+            <div class="mt-12 text-emerald-400 text-sm tracking-widest">ВРАЩАЙТЕ КОЛЕСО — ВРАЩАЙТЕ ИСТОРИЮ</div>
+        </div>
+    </section>
+
+    <section id="achievements" class="py-24 bg-zinc-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-16">Достижения</h2>
+            <div class="space-y-20">
+                <div class="flex gap-8 items-start timeline-item">
+                    <div class="w-14 h-14 bg-emerald-900 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">🚲</div>
+                    <div>
+                        <div class="uppercase text-emerald-400 text-xs tracking-widest mb-2">2022 — по настоящее время</div>
+                        <div class="text-3xl font-semibold">Исполнительный директор</div>
+                        <div class="mt-6 text-zinc-400 leading-relaxed">Союза велосипедистов Республики Татарстан. Организация велопробегов, развитие велодорожной инфраструктуры и популяризация велоспорта в регионе.</div>
+                    </div>
+                </div>
+
+                <div class="flex gap-8 items-start timeline-item">
+                    <div class="w-14 h-14 bg-emerald-900 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">🏙️</div>
+                    <div>
+                        <div class="uppercase text-emerald-400 text-xs tracking-widest mb-2">2023–2025</div>
+                        <div class="text-3xl font-semibold">Благоустройство Нижнекамска</div>
+                        <div class="mt-6 text-zinc-400 leading-relaxed">Активное участие в общественных инициативах: новые пространства, модернизация производств, улучшение условий труда и жизни жителей.</div>
+                    </div>
+                </div>
+
+                <div class="flex gap-8 items-start timeline-item">
+                    <div class="w-14 h-14 bg-emerald-900 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">📚</div>
+                    <div>
+                        <div class="uppercase text-emerald-400 text-xs tracking-widest mb-2">2024</div>
+                        <div class="text-3xl font-semibold">Профильные классы</div>
+                        <div class="mt-6 text-zinc-400 leading-relaxed">Создание Нефтехим- и СИБУР-классов в школах Нижнекамска. Оснащение современной материально-технической базы.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-black">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-12">Проекты</h2>
+            <div class="grid grid-cols-3 gap-6">
+                <div class="bg-zinc-900 p-8 rounded-3xl">Велопробеги СВ РТ</div>
+                <div class="bg-zinc-900 p-8 rounded-3xl">Общественные советы Нижнекамска</div>
+                <div class="bg-zinc-900 p-8 rounded-3xl">Благоустройство и общественные пространства</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 bg-black text-center text-zinc-500 text-sm">
+        © 2026 Шаехов Раис. Нижнекамск
+    </footer>
+</body>
+</html>
